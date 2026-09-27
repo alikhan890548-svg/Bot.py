@@ -126,3 +126,17 @@ greenlet>=3.0,<4
 python-dotenv>=1.0,<2
 qrcode[pil]>=7.4,<9
 Pillow>=10,<13
+
+
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "Dockerfile"
+  },
+  "deploy": {
+    "startCommand": "python -u main.py",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
+  }
+}
