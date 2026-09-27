@@ -118,3 +118,11 @@ python -m unittest discover -s tests -v
 - Payment approval manual admin action है; UPI gateway auto-verification इस source में मौजूद नहीं है।
 - Bot long polling इस्तेमाल करता है, इसलिए एक समय में एक ही running instance रखें।
 - Channel usernames/IDs और invite links को अपने channels के अनुसार बदलें।
+
+- aiogram>=3.13,<4
+aiosqlite>=0.20,<1
+SQLAlchemy[asyncio]>=2.0,<3
+greenlet>=3.0,<4
+python-dotenv>=1.0,<2
+qrcode[pil]>=7.4,<9
+Pillow>=10,<13
